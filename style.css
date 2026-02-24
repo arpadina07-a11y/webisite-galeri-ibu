@@ -1,0 +1,141 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color:#4a3728;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #8d6e63;
+    font-style: italic;
+}
+
+body {
+    background-color: #f9f5f0;
+    color: #333
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.galeri-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(1.1);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.info h3 {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #8b5e3c;
+    font-size: 1.2rem;
+    color: #9b785a;
+    
+}
+
+.info p {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card img {
+    cursor: zoom-in;
+}
